@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Todo app</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+
+<body>
+  <div class="parent">
+    <div class="background-image"></div>
+    <div class="todo-box">
+      <div class="logo-bar">
+        <h1>Todo</h1>
+        <button id="changeTheme"></button>
+      </div>
+      <div class="new-todo-input-bar">
+        <span class="checkbox">
+          <img src="images/icon-check.svg" alt="">
+        </span>
+        <input type="text" name="" id="new-todo-input" placeholder="Create a new todo...">
+      </div>
+      <div class="todo-list">
+        <div class="todo-elements"></div>
+        <div class="last-box">
+          <span class="items-left"><span></span> items left</span>
+          <div class="desktop-filter-bar filter-bar">
+            <button class="all active">All</button>
+            <button class="Active">Active</button>
+            <button class="Completed">Completed</button>
+          </div>
+          <button class="clear-completed">Clear Completed</button>
+        </div>
+        <div class="mobile-filter-bar filter-bar">
+          <button class="all active">All</button>
+            <button class="Active">Active</button>
+            <button class="Completed">Completed</button>
+        </div>
+      </div>
+    </div>
+    <p class="drag-and-drop-p">Drag and drop to reorder list</p>
+
+    <div class="attribution">
+      <div>Challenge by  <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</div>
+      <div>Coded by <a href="#">Sevinch Xolboyeva</a>.</div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
